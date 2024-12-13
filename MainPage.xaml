@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DiceRoller.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Margin="0,150"
+            Spacing="50">
+            <Frame
+                BackgroundColor="white"
+                HeightRequest="150"
+                WidthRequest="150"
+                HorizontalOptions="Center"
+                >
+                <Label 
+                    x:Name="result"
+                    Text="3"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    FontSize="75"
+                    TextColor="Orange"
+                    
+                    />
+            </Frame>
+                
+            
+            <Button
+                x:Name="rollTheDice"
+                Text="Roll dice"
+                BackgroundColor="White"
+                TextColor="Black"
+                FontSize="Medium"
+                Clicked="rollDice"
+                />
+            <Button
+                Text="Give an emoiji! :)"
+                FontSize="Medium"
+                Clicked="rollEmoji"
+                
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
